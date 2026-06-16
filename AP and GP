@@ -1,0 +1,41 @@
+// for ap
+
+import java.util.Scanner;
+
+public class Myjava {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      System.out.print("enter a,n and d: ");
+      int a = sc.nextInt();
+      int n = sc.nextInt();
+      int d = sc.nextInt();
+      int term = a;
+      for(int i=0;i<n;i++){
+      System.out.print(term+" ");
+      term = term+d;
+      }
+      sc.close();
+  }
+}
+
+
+// for gp
+
+import java.util.Scanner;
+
+public class Myjava{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter a,n and r: ");
+    int a = sc.nextInt();
+    int n = sc.nextInt();
+    int r = sc.nextInt();
+
+    int term = a;
+    for(int i=0;i<n;i++){
+      System.out.print(term+" ");
+      term=term*r;
+    }
+    sc.close();
+  }
+}
