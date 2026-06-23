@@ -1,0 +1,17 @@
+public class Myjava{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+     int A[]={2,4,6,8,10,5,1,7,9};
+    int key;
+
+    System.out.print("Enter key: ");
+    key = sc.nextInt();
+     for(int i=0;i<A.length;i++){
+      if(A[i]==key){
+        System.err.println(key+" is found on "+i+ " place");
+        System.exit(0);
+      }
+    }
+    System.out.println("element not found");
+   }
+  }
