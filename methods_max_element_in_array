@@ -1,0 +1,15 @@
+public class Myjava{
+   static int maximum(int A[]){
+     int max=A[0];
+     for(int i=0;i<A.length;i++){
+      if(A[i]>max){
+         max=A[i];
+      }
+     }
+     return max;
+   }
+   public static void main(String[] args){
+     int A[]={2,3,5,7,4,8,13,23,12,17};
+     System.out.println(maximum(A));
+  }
+  }
