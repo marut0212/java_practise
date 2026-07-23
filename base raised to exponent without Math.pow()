@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        int base = 2;
+        int exponent = 10; // Test case 1
+        int power=1;
+        if(exponent==1){
+            System.out.println("Result: 1");
+        }
+        else{
+        for(int i=1; i<=exponent; i++){
+          power = base*power;
+        }
+        System.out.println("Result: "+power);
+        }
+    }
+}
