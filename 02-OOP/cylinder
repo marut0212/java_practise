@@ -1,0 +1,26 @@
+class Cylinder_ {
+    public double radius;
+    public double height;
+
+    public double curved_surface_area(){
+        return 2*Math.PI*radius*height;
+    }
+    public double total_surface_area(){
+        return 2*Math.PI*radius*(height+radius);
+    }
+    public double volume(){
+        return Math.PI*radius*radius*height;
+    }
+}
+public class cylinder{
+    public static void main(String[] args) {
+        Cylinder_ c=new Cylinder_();
+
+        c.radius=5;
+        c.height=7;
+
+        System.out.println("CSA ="+c.curved_surface_area());
+        System.out.println("TSA ="+c.total_surface_area());
+        System.out.println("Volume ="+c.volume());
+    }
+}
