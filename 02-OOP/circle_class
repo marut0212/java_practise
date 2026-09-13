@@ -24,8 +24,8 @@ public class circle {
         System.out.println("Perimeter1 ="+c1.perimeter());
         System.out.println("Circumference1 ="+c1.circumference());
 
-        System.out.println("Area2 ="+c1.area());
-        System.out.println("Perimeter2 ="+c1.perimeter());
-        System.out.println("Circumference2 ="+c1.circumference());
+        System.out.println("Area2 ="+c2.area());
+        System.out.println("Perimeter2 ="+c2.perimeter());
+        System.out.println("Circumference2 ="+c2.circumference());
     }
 }
