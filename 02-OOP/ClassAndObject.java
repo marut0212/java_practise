@@ -1,0 +1,31 @@
+class circle_class {
+    public double radius;
+
+    public double area(){
+        return Math.PI*radius*radius;
+    }
+    public double perimeter(){
+        return 2*Math.PI*radius;
+    }
+    public double circumference(){
+        return perimeter();
+    }
+}
+
+public class circle {
+    public static void main(String[] args) {
+        circle_class c1=new circle_class();
+        circle_class c2=new circle_class();
+        
+        c1.radius=5;
+        c2.radius=7;
+
+        System.out.println("Area1 ="+c1.area());
+        System.out.println("Perimeter1 ="+c1.perimeter());
+        System.out.println("Circumference1 ="+c1.circumference());
+
+        System.out.println("Area2 ="+c1.area());
+        System.out.println("Perimeter2 ="+c1.perimeter());
+        System.out.println("Circumference2 ="+c1.circumference());
+    }
+}
