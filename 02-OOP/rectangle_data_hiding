@@ -1,0 +1,50 @@
+package Data_Hiding;
+
+class Rectangle {
+    private int length;
+    private int breadth;
+
+    public int getLength(){
+        return length;
+    }
+    public void setLength(int l){
+        if(l>0){
+            length=l;
+        }
+        else{
+            length=0;
+        }
+    }
+
+    public int getBreadth(){
+        return breadth;
+    }
+    public void setBreadth(int b){
+        if(b>0){
+            breadth=b;
+        }
+        else{
+            breadth=0;
+        }
+    }
+
+    public int area(){
+        return getLength()*getBreadth();
+    }
+
+    public int perimeter(){
+        return 2*(length+breadth);
+    }
+}
+
+public class rectangle_{
+    public static void main(String[] args) {
+        Rectangle r=new Rectangle();
+
+        r.setLength(10);
+        r.setBreadth(5);
+
+        System.out.println(r.area());
+        System.out.println(r.perimeter());
+    }
+}
