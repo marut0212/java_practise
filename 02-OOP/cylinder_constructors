@@ -1,0 +1,36 @@
+package Constructors;
+
+class Cylinder{
+
+    private double radius;
+    private double height;
+
+    public Cylinder(double r,double h){
+        radius =r;
+        height=h;
+    }
+
+    public double csa(){
+        return 2*Math.PI*radius*height;
+    }
+
+    public double tsa(){
+        return 2*Math.PI*radius*(height+radius);
+    }
+
+    public double volume(){
+        return Math.PI*radius*radius*height;
+    }
+}
+
+
+public class cylinder_ {
+    public static void main(String[] args) {
+        
+        Cylinder c=new Cylinder(7,11);
+
+        System.out.println(c.csa());
+        System.out.println(c.tsa());
+        System.out.println(c.volume());
+    }
+}
