@@ -1,0 +1,58 @@
+package Constructors;
+
+class Products{
+
+    private String itemno;
+    private String name;
+    private double price;
+    private int quantity;
+
+    public String getItemno(){
+        return itemno;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public double getPrice(){
+        return price;
+    }
+
+    public int getQuantity(){
+        return quantity;
+    }
+
+    public void setPrice(double p){
+        price=p;
+    }
+
+    public void setQuantity(int q){
+        quantity=q;
+    }
+
+    public Products(String itn, String n){
+        itemno=itn;
+        name=n;
+    }
+
+    public Products(String itn, String n,double p,int q){
+        itemno=itn;
+        name=n;
+        setPrice(p);
+        setQuantity(q);
+    }
+}
+
+
+public class product {
+    public static void main(String[] args) {
+        
+        Products p=new Products("234","Comb",256.45,3);
+
+        System.out.println(p.getItemno());
+        System.out.println(p.getName());
+        System.out.println(p.getPrice());
+        System.out.println(p.getQuantity());
+    }
+}
